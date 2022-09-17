@@ -1,6 +1,4 @@
-
-#Python program to find roots of quadratic equatioh
-
+#Python program to find roots of quadratic equation
 import cmath
 a=float(input("co-efficient of x**2__:"))
 b=float(input("co-efficient of x__:"))
