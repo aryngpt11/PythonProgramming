@@ -1,4 +1,4 @@
-#Python program to find whether a no is+ve,-ve or zero.
+#Python program to find whether a no is positive, or zero.
 
 num = float(input("Enter a number: "))
 if num > 0:
