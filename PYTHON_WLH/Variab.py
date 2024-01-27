@@ -1,4 +1,4 @@
-name="Aryan"
+name=input("Enter yur name")
 roll_no=29
 percentage=82.5
 is_Student=True
