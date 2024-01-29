@@ -25,3 +25,12 @@ for i in range(0,len(suffix)):
 #creating the final string
 res=prefix+mirror
 print(res)
+
+
+#find the sum of n njumbers
+
+""" n=int(input("Enter n: "))
+sum=0
+for i in range(1,n+1):
+    sum+=i
+print(sum) """
