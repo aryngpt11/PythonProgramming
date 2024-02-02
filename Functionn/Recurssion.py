@@ -5,4 +5,5 @@ def factorial(n):
     #recursive case
     ans=n*factorial(n-1)
     return ans
-print("The factoraial is",factorial(5))
+n=int(input("Enter the value of n: "))
+print("The factoraial of",n,"is",factorial(n))
