@@ -68,8 +68,38 @@ class DoublyLL:
                 self.start=temp.next
                 temp.next.prev=None
             else:
-                while temp.next is not None:
-                    
+                while temp is not None:
+                    if temp.item==data:
+                        if temp.next is not None:
+                            temp.next.prev=temp.prev
+                        if temp.prev is not None:
+                            temp.prev.next=temp.next
+                        else:
+                            self.start=temp.next
+                        break
+                    temp=temp.next
+    def __iter__(self):
+        return DLLIterator(self.start)
+class DLLIterator:
+    def __init__(self,start):
+        self.current=start
+    def __iter__(self):
+        return self
+    def __next__(self):
+        if not self.current:
+            raise StopIteration
+        data=self.current.item
+        self.current=self.current.next
+        return data
+    
+myl=DoublyLL()
+myl.insert_at_start(10)
+myl.insert_at_last(20)
+myl.insert_after(myl.search(10),15)
+for x in myl:
+    print(x,end=" ")
+print()
+
 
 
             
